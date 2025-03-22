@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Youtube.com Clone</title>
+    <style>
+      .body {
+        height:9000px;
+      }
+      .thumbnail {
+        width:200px; 
+        border-top-left-radius: 50% 50%;
+        border-top-right-radius: 50% 50%; 
+        border-bottom-right-radius: 50% 50%; 
+        border-bottom-left-radius: 50% 50%;
+        
+
+      }
+      .search-bar {
+        font-size: 20px;
+        margin-left: 12px;
+      }
+      .search-bar2 {
+        font-size: 20px;
+        border-radius: 5px;
+        border-color:rgb(176, 171, 171);
+        padding-left: 10px;
+        padding-top:10px;
+        padding-bottom: 10px;
+        border-width: 1px;
+        width:200px;
+        box-shadow: 1px 1px 1px 1px rgba(163, 154, 154, 0.4);
+      }
+      .a1 {
+        font-family: Arial;
+        color:rgb(96,96,96);
+        font-size: 10px;
+        margin-bottom: 0;  
+      }
+      .search-bar3 {
+        width:280px;
+        margin-top: 5px;
+        border-radius: 3px;
+        border-width: 1px;
+        font-size: 20px;
+      }
+      .a2 {
+        font-family: Arial;
+        font-size: 11px;
+        color:rgb(96,96,96);
+      }
+      .button-1 {
+        color:white;
+        background-color: rgb(54, 108, 209);
+        padding-left: 103px;
+        padding-right: 103px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 20px;
+        border: none;
+        margin-bottom: 50px;
+      }
+      .search-bar4 {
+        display: block;
+        border-radius: 2px;
+        border-width: 1px;
+      }
+      .search-bar5 {
+        border-radius:2px ;
+        border-width: 1px;
+        margin-bottom: 50px;
+      }
+      .a4 {
+        font-family: Arial;
+        font-size:30px;
+      }
+      .search-bar6 {
+        display: block;
+        background-color: rgb(231, 231, 231);
+        padding-left: 15px;
+        padding-right: 100px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: none;
+        margin-bottom: 10px;
+      }
+      .search-bar7 {
+        background-color: rgb(231, 231, 231);
+        padding-left: 15px;
+        padding-right: 100px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: none;
+        margin-bottom: 10px;
+        display: block;
+        margin-bottom: 30px;
+      }
+      .button-2 {
+        background-color: black;
+        color: white;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        margin-right: 15px;
+      }
+      .button-3 {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        border: none;
+        background-color: rgb(231, 231, 231);
+        margin-bottom: 50px;
+      }
+      .thumbnail2 {
+        width:250px;
+        display: block;
+        margin-left: 60px;
+        margin-bottom: 0;
+        
+      }
+      .search-bar8 {
+        width:350px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        border-radius: 30px;
+        border-width: 0;
+        margin-top: 0;
+        box-shadow: 1px 2px 2px 1px rgba(20,20,20,0.4);
+        margin-bottom: 50px;
+
+        
+      }
+      .vedio1-example {
+      background-color: #f75707;
+      width: 100px;
+      height: 100px;
+      display: block;
+      }
+      .vedio2-example {
+        background-color: green;
+        border-radius: 60px;
+        width:100px;
+        height:100px; 
+        display: block;
+        margin-left:20px;
+        margin-bottom: 40px;
+      }
+      .vedio3-example {
+        margin-left: 20px;
+        width: 200px;
+        height: 220px;
+        display: inline-block;
+        margin-bottom: 50px;
+        box-shadow: 1px 2px 2px 4px rgba(20,20,20,0.4);
+      }
+      .thumbnail3 {
+        width:200px;
+        height: 100px;
+        margin-bottom: 0;
+
+      }
+      .a5 {
+        font-family: Arial;
+        font-size:20px;
+        font-style: bold;
+        margin-bottom: 0;
+        margin-left: 5px;
+      }
+      .a6 {
+        font-family: Arial;
+        font-size: 10px;
+        margin-top: 5px;
+        margin-left: 5px;
+
+      }
+      .button-4 {
+        color: white;
+        background-color: rgb(80, 80, 212);
+        border-radius: 5px;
+        border: none;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        margin-left: 5px;
+
+      }
+      .vedio-4 {
+        display: inline-block;
+      }
+      .thumbnail5{
+        border-radius: 10px;
+        height: 100px;
+        width: 200px;
+      }
+      .vedio-info1 {
+        font-family: Roboto,Arial;
+        display: inline-block;
+        width:250px;
+        line-height: 15px;
+        margin-left: 8px;
+      }
+      .a7 {
+        font-weight: bold;
+        margin-top:0;
+        margin-bottom: 12px;
+      }
+      .a8 {
+        font-size: 13px;
+        color: rgb(96,96,96);
+        margin-bottom: 0;
+      }
+      .a9 {
+        font-size: 15px;
+        color: rgb(96,96,96);
+        margin-top: 5px;
+      }
+      .design-13a {
+        display: flex;
+        height: 60px;
+        margin-bottom: 50px;
+
+      }
+      .d1 {
+        background-color: rgb(141, 219, 150);
+        width: 100px;
+        display: flex;
+        align-items: center;
+      }
+      .d2 {
+        background-color: lightcoral;
+        width: 200px;
+      }
+      .da {
+        background-color: black;
+        width:35px;
+        color: white;
+        margin-left: 30px;
+        
+      }
+      .d3 {
+        background-color: lightcoral;
+        width: 200px;
+      }
+      .da1 {
+        display: flex;
+        width:40px;
+        background-color: black;
+        color: white;
+      }
+      .ca3 {
+        display: flex;
+        width:40px;
+        background-color: black;
+        color: white;
+      }
+      .design-13-1 {
+        display: flex;
+        width:450px;
+      }
+      .icon1 {
+       border-radius: 40px; 
+       height: 60px;
+      }
+      .right-1 {
+        font-family: Arial;
+        font-size: 15px;
+        margin-top: -15px;
+        margin-left: 10px;
+      }
+      .span-example1 {
+        color: rgb(96,96,96);
+      }
+      .bottom-1 {
+        display: flex;
+        width:319px;
+        margin-left: 70px;
+        border-style: solid;
+        border-width: 1px;
+        height: 70px;
+        border-radius: 10px;
+      }
+      .design-13f {
+        margin-bottom: 100px;
+      }
+      .thumbnail-10 {
+        height: 200px;
+        position: relative;
+      }
+      .div-15e {
+        position: absolute;
+        top: 2025px;
+        left:85px;
+        background-color: black;
+        color: white;
+        font-family: Arial;
+        font-size: 10px;
+        padding-left: 5px;
+        padding-right: 8px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+      }
+      .color-1 {
+        background-color: rgb(231, 234, 233);
+        height: 50px;
+        width: 134px;
+        top:2300
+      }
+      .thumbnail1 {
+  width:100%;
+  cursor: pointer;
+}
+
+.vedio-title1 {
+  margin-top: 0;
+  font-size:14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+}
+.vedio-info-grid1 {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+.profile-picture1 {
+  width:36px;
+  border-radius: 50px;
+}
+.thumbnail-row1 {
+  margin-bottom: 8px;
+  position: relative;
+
+}
+.vedio-author1, 
+.vedio-stats1 {
+  font-size: 12px;
+  color: rgb(96,96,96);
+}
+.vedio-author1 {
+  margin-bottom: 4px;
+}
+.vedio-grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 40px;
+  column-gap: 16px;
+}
+.video-time1 {
+  font-family: Roboto,Arial;
+  font-size: 12px;
+  font-weight: 500px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right:5px;
+
+}
+      
+
+    </style>
+  </head>
+  <body>
+    <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+    <input class="search-bar" type="text" placeholder="search">
+    <input class="search-bar2" type="text" placeholder="search">
+    <p class="a1">
+      Email
+    </p>
+    <input class="search-bar3" type="text" placeholder="">
+    <p class="a2">
+      By clicking Agree & JOin,you agree to the Privacy policy.
+    </p>
+    <button class="button-1">
+      Agree & Join
+    </button>
+
+    <input class="search-bar4" type="text" placeholder="Name">
+    <input class="search-bar5" type="text" placeholder="Email">
+
+    <p class="a4">
+      Request a ride now
+    </p>
+    <input class="search-bar6" type="text" placeholder="Enter pickup location">
+    <input class="search-bar7" type="text" placeholder="Enter destination">
+    <button class="button-2">
+      Request now
+    </button>
+    <button class="button-3">
+      Schedule for later
+    </button>
+
+
+    <img class="thumbnail2" src="thumbnails/thumbnail-3.webp">
+    <input class="search-bar8" type="text" placeholder="Search Google or type a URL">
+
+    <div class="vedio1-example">
+    </div>
+    <div class="vedio2-example">
+    </div>
+
+    <div class="vedio-3-grid">
+      <div class="vedio3-example">
+        <img class="thumbnail3" src="thumbnails/thumbnail-2.webp">
+        <p class="a5">
+          Solo leveling
+        </p>
+        <p class="a6">
+          2 Mutual Shadows
+        </p>
+        <button class="button-4">
+          Add Shadow
+        </button>
+      </div>
+  
+      <div class="vedio3-example">
+        <img class="thumbnail3" src="thumbnails/thumbnail-1.webp">
+        <p class="a5">
+          Solo leveling
+        </p>
+        <p class="a6">
+          2 Mutual Shadows
+        </p>
+        <button class="button-4">
+          Add Shadow
+        </button>
+      </div>
+  
+      <div class="vedio3-example">
+        <img class="thumbnail3" src="thumbnails/thumbnail-4.webp">
+        <p class="a5">
+          Solo leveling
+        </p>
+        <p class="a6">
+          2 Mutual Shadows
+        </p>
+        <button class="button-4">
+          Add Shadow
+        </button>
+      </div>
+      <div>
+    </div>
+    
+     
+    <div class="vedio-preview1">  
+    <div class="vedio-4">
+    <img class="thumbnail5" src="thumbnails/thumbnail-4.jpeg">
+    </div>
+    <div class="vedio-info1">
+    <p class="a7">
+      How to compete ahainst CS degree (as a self taught dev)
+    </p>
+    <p class="a8">
+      SimpleSuperDev
+    </p>
+    <p class="a9">
+      1.5K views - 4 months ago
+    </p>
+    </div>
+    </div>
+    
+    <div class="vedio-preview1"> 
+    <div class="vedio-4">
+      <img class="thumbnail5" src="thumbnails/thumbnail-6.jpeg">
+      </div>
+      <div class="vedio-info1">
+      <p class="a7">
+        How to compete ahainst CS degree (as a self taught dev)
+      </p>
+      <p class="a8">
+        SimpleSuperDev
+      </p>
+      <p class="a9">
+        1.5K views - 4 months ago
+      </p>
+      </div>
+      </div>
+      
+      <div class="vedio-preview1"> 
+      <div class="vedio-4">
+        <img class="thumbnail5" src="thumbnails/thumbnail-5.jpeg">
+        </div>
+        <div class="vedio-info1">
+        <p class="a7">
+          How to compete ahainst CS degree (as a self taught dev)
+        </p>
+        <p class="a8">
+          SimpleSuperDev
+        </p>
+        <p class="a9">
+          1.5K views - 4 months ago
+        </p>
+        </div>
+      </div>
+      </div>
+      
+
+      <div class="design-13a">
+        <div class="d1"><p class="da">item1</p></div>
+        <div class="d2"></div>
+      </div>
+      
+      <div class="design-13f">
+        <div class="design-13-1">
+          <div>
+            <img class="icon1" src="channel-pictures/channel-1.jpeg">
+            
+          </div>
+          <div class="right-1">
+            <p style="margin-bottom: 0;">
+              <strong>supersimple.dev</strong> <span class="span-example1"> @SuperSimpleDev</span>
+            </p>
+          <p style="margin-top: 5px;">
+            what is backend web development? A complete overview.New video is upl
+          </p>
+          </div>
+         </div>
+         
+         <div class="bottom-1">
+         <div style="display:flex;
+         width:100px;
+         background-color: rgb(220, 222, 222);
+         flex-direction: row;
+         height:70px;
+         border-radius: 10px;">
+         .</div>
+         <div>
+          <p style="color: rgb(128, 124, 124);
+          font-family: Arial;
+          font-size: 15px;
+          margin-bottom: 0;
+          margin-top: 8px;
+          margin-left: 10px;">
+            youtube.com
+          </p>
+          <p style="font-family: Arial;
+          font-size: 15px;
+          margin-top: 4px;
+          margin-left: 10px;">
+            Backend web devolpment - a complete overview (2021)
+          </p>
+         </div>
+      </div>
+
+     <div>
+      <img class="thumbnail-10" src="thumbnails/thumbnail-10.jpeg">
+     </div>
+     <div class="div-15e">
+      20% OFF
+     </div>
+     <div class="color-1">
+     </div>
+
+     
+     <div class="vedio-grid1">
+      <div class="vedio-preview1">
+        <div class="thumbnail-row1">
+          <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+            <img class="thumbnail11" src="thumbnails/thumbnail-1.webp">
+          </a>
+          <div class="video-time1">14:20</div>
+        </div>
+        <div class="vedio-info-grid1">
+          <div class="channel-picture1">
+            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+              <img class="profile-picture1" src="channel-pictures/channel-1.jpeg">
+            </a>
+          </div>
+          <div class="vedio-info1">
+            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+              <p class="vedio-title1">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+            </a>
+            <p class="vedio-author1">
+              Marques Brownlee
+            </p>
+            <p class="vedio-stats1">
+              3.4M views &#183; 6 months ago
+            </p>
+          </div>
+          </div>
+        </div>
+    </body>
+</html>
